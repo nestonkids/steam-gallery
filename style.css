@@ -25,10 +25,9 @@ header p {
   opacity: 0.8;
 }
 
-/* ギャラリー領域 */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   padding: 2rem;
   max-width: 1200px;
@@ -37,7 +36,7 @@ header p {
 
 @media (max-width: 600px) {
   .gallery {
-    grid-template-columns: 1fr; /* スマホでは1列 */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -65,7 +64,6 @@ header p {
   background: #0056b3;
 }
 
-/* 各カード */
 .card {
   background: #fff;
   border-radius: 10px;
@@ -75,10 +73,9 @@ header p {
   overflow: hidden;
 }
 
-/* 埋め込みコンテンツ */
 .embed {
   position: relative;
-  padding-top: 56.25%; /* 16:9比率保持 */
+  padding-top: 56.25%;
   overflow: hidden;
 }
 
@@ -93,7 +90,6 @@ header p {
   object-fit: cover;
 }
 
-/* キャプションリンク（カード下部） */
 .caption-link {
   display: block;
   padding: 0.8em;
